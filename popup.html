@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WordEx</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body { 
+            font-family: Arial, sans-serif; 
+            width: 300px; 
+            padding: 10px;
+        }
+
+        input { 
+            margin-top: 10px;
+            min-width: 100%; 
+            max-width: 100%; 
+            border: None;
+            padding: 5px;
+            outline: None;
+            border-bottom: 1px solid black;
+        }
+
+        button { 
+            width: 100%; 
+            padding: 10px; 
+            margin-top: 10px; 
+            background-color: #13cf61;
+            border-radius: 10px;
+            border: none;
+        }
+
+        button:active {
+            background-color: #10b153;
+        }
+        .response { padding: 10px; border: 1px solid #ccc; margin-top: 10px; cursor: pointer; }
+        .response:hover { background-color: #f0f0f0; }
+    </style>
+</head>
+<body>
+    <h3>WordEx</h3>
+    <input id="inputText" placeholder="">
+    <button id="enhanceButton">Enhance</button>
+    <div id="responses"></div>
+    <script src="popup.js"></script>
+</body>
+</html>

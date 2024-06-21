@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "WordEx",
+    "version": "1.0",
+    "description": "Make your writing out standing.",
+    "permissions": ["activeTab", "storage", "scripting"],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "images/wordex.png",
+            "48": "images/wordex.png",
+            "128": "images/wordex.png"
+        }
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["contentScript.js"]
+        }
+    ]
+  }
+  
