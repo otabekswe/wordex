@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "WordEx",
     "version": "1.0",
-    "description": "Make your writing out standing.",
+    "description": "Make your writing stand out.",
     "permissions": ["activeTab", "storage", "scripting"],
     "action": {
         "default_popup": "popup.html",
